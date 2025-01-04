@@ -1,5 +1,8 @@
 font pango: CaskaydiaMono Nerd Font Regular 12
 
+gaps inner 10px
+gaps outer 10px
+
 ### Variables
 set $mod Mod1
 set $left h
