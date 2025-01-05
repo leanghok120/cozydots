@@ -6,12 +6,16 @@
 alt + Return
   ghostty
 
+# browser
+alt + b
+  zen-browser
+
 # program launcher
 alt + @space
 	rofi -show drun
 
 # make sxhkd reload its configuration files:
-alt + Escape
+alt + shift + u
 	pkill -USR1 -x sxhkd
 
 #
@@ -19,11 +23,11 @@ alt + Escape
 #
 
 # quit/restart bspwm
-super + alt + {q,r}
+alt + shift + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-alt + {_,shift + }w
+alt + {_,shift + }q
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
@@ -43,7 +47,7 @@ alt + g
 #
 
 # set the window state
-alt + {t,shift + t,s,f}
+alt + {t,shift + t,w,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
