@@ -8,7 +8,7 @@ xsetroot -cursor_name left_ptr &
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Polybar
-polybar &
+$HOME/.config/polybar/launch.sh &
 
 # Repeat rate
 xset r rate 200
