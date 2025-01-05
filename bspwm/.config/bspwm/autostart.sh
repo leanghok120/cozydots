@@ -13,6 +13,9 @@ sh $HOME/.config/polybar/launch.sh &
 # Picom
 picom &
 
+# Dunst
+dunst &
+
 # Repeat rate
 xset r rate 200
 
