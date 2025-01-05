@@ -10,6 +10,10 @@ alt + Return
 alt + b
   zen-browser
 
+# screenshot
+alt + p
+  flameshot gui
+
 # program launcher
 alt + @space
 	rofi -show drun
@@ -41,6 +45,16 @@ alt + y
 # swap the current node and the biggest window
 alt + g
 	bspc node -s biggest.window
+
+# Volume
+F10
+  pactl set-sink-mute \@DEFAULT_SINK@ toggle
+
+F11
+  pactl set-sink-volume \@DEFAULT_SINK@ -5%
+
+F12
+  pactl set-sink-volume \@DEFAULT_SINK@ +5%
 
 #
 # state/flags
