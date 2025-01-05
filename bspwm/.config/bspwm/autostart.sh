@@ -10,6 +10,9 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Polybar
 sh $HOME/.config/polybar/launch.sh &
 
+# Picom
+picom &
+
 # Repeat rate
 xset r rate 200
 
