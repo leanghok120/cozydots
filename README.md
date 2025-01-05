@@ -22,7 +22,7 @@ Welcome to my dotfiles repository! This repository contains all the config files
 ## Installation
 
 ```sh
-    yay -S sway swaylock neovim tmux fish ghostty-git swww fzf zoxide ripgrep fd rofi waybar eza swaync bat hyprpolkitagent-git xdg-desktop-portal-gtk qt5-wayland qt6-wayland xdg-desktop-portal-hyprland
+    yay -S dunst polybar picom lxsession bspwm neovim tmux fish ghostty-git swww fzf zoxide ripgrep fd rofi eza swaync bat
 ```
 
 ## Keybinds
