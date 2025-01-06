@@ -22,6 +22,10 @@ alt + @space
 alt + shift + u
 	pkill -USR1 -x sxhkd
 
+# toggle bar
+alt + s
+  sh $HOME/.config/polybar/toggle.sh
+
 #
 # bspwm hotkeys
 #
