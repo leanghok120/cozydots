@@ -21,3 +21,5 @@ xset r rate 200
 
 # Polkit
 lxsession &
+
+killall firewall-applet
