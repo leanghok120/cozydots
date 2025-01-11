@@ -18,12 +18,12 @@ assign [class="TelegramDesktop"] $ws5
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
-exec_always picom
-exec lxsession
+exec_always --no-startup-id picom
+exec_always --no-startup-id lxsession
+exec_always --no-startup-id xset r rate 200
 exec nitrogen --restore
 exec zen-browser
 exec telegram-desktop
-exec_always xset r rate 200
 
 # Audio
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -42,7 +42,7 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id $menu
 bindsym $mod+shift+x exec i3lock -c 000000
 bindsym $mod+p exec flameshot gui
-bindsym $mod+b exec i3-msg bar mode toggle
+bindsym $mod+b exec --no-startup-id i3-msg bar mode toggle
 
 # change focus
 bindsym $mod+h focus left
