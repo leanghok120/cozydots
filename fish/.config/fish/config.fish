@@ -17,4 +17,4 @@ end
 
 fish_add_path /home/leanghok/.spicetify
 
-zoxide init fish | source
+zoxide init fish --cmd cd | source
