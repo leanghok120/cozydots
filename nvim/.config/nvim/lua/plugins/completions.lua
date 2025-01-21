@@ -21,8 +21,7 @@ return {
     config = function()
       local cmp = require "cmp"
       require("luasnip.loaders.from_vscode").lazy_load()
-
-      cmp.setup {
+      local options = {
         snippet = {
           expand = function(args)
             require("luasnip").lsp_expand(args.body)
@@ -47,6 +46,9 @@ return {
           { name = "path" },
         }),
       }
+
+      options = vim.tbl_deep_extend("force", options, require "nvchad.cmp")
+      require("cmp").setup(options)
     end,
   },
 }
