@@ -28,9 +28,9 @@ exec telegram-desktop
 
 # Audio
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym F11 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym F10 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && notify-send "Volume" "$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}')"
+bindsym F11 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && notify-send "Volume" "$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}')"
+bindsym F10 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && notify-send "Volume" "muted"
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -43,7 +43,8 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id $menu
 bindsym $mod+shift+x exec i3lock -c 000000
 bindsym $mod+p exec flameshot gui
-bindsym $mod+b exec --no-startup-id i3-msg bar mode toggle
+bindsym $mod+b exec notify-send "$(date '+%I:%M:%S %p')"
+bindsym $mod+Shift+b exec notify-send "$(date '+%A %d %B %Y')"
 
 # change focus
 bindsym $mod+h focus left
@@ -161,23 +162,4 @@ client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
-
-# Bar
-bar {
-  status_command i3status
-
-  colors {
-    background         $base
-    statusline         $text
-    focused_statusline $text
-    focused_separator  $base
-
-    # target           border bg        text
-    focused_workspace  $base  $mauve    $crust
-    active_workspace   $base  $surface2 $text
-    inactive_workspace $base  $base     $text
-    urgent_workspace   $base  $red      $crust
-  }
-
-}
 
