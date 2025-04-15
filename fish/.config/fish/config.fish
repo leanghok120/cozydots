@@ -18,3 +18,7 @@ end
 fish_add_path /home/leanghok/.spicetify
 
 zoxide init fish --cmd cd | source
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
