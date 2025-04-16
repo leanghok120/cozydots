@@ -43,7 +43,7 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id $menu
 bindsym $mod+shift+x exec i3lock -c 000000
 bindsym $mod+p exec flameshot gui
-bindsym $mod+b exec notify-send "$(date '+%I:%M:%S %p')"
+bindsym $mod+b exec notify-send "$(date '+%I:%M %p')"
 bindsym $mod+Shift+b exec notify-send "$(date '+%A %d %B %Y')"
 
 # change focus
