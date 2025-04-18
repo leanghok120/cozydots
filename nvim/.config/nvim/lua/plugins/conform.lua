@@ -1,24 +1,32 @@
 return {
-  {
-    'stevearc/conform.nvim',
-    event = { 'BufWritePre' },
-    cmd = { 'ConformInfo' },
-    opts = {
-      notify_on_error = false,
-      format_on_save = function(bufnr)
-        local disable_filetypes = { c = true, cpp = true }
-        if disable_filetypes[vim.bo[bufnr].filetype] then
-          return nil
-        else
-          return {
-            timeout_ms = 500,
-            lsp_format = 'fallback',
-          }
-        end
-      end,
+  "stevearc/conform.nvim",
+  event = { "BufReadPre", "BufNewFile" },
+  config = function()
+    local conform = require "conform"
+
+    conform.setup {
       formatters_by_ft = {
-        lua = { 'stylua' },
+        javascript = { "prettierd" },
+        typescript = { "prettierd" },
+        javascriptreact = { "prettierd" },
+        typescriptreact = { "prettierd" },
+        svelte = { "prettierd" },
+        css = { "prettierd" },
+        html = { "prettierd" },
+        json = { "prettierd" },
+        yaml = { "prettierd" },
+        markdown = { "prettierd" },
+        graphql = { "prettierd" },
+        liquid = { "prettierd" },
+        lua = { "stylua" },
+        python = { "isort", "black" },
+        go = { "gofumpt", "goimports" },
       },
-    },
-  },
+      format_on_save = {
+        lsp_fallback = true,
+        async = false,
+        timeout_ms = 3000,
+      },
+    }
+  end,
 }

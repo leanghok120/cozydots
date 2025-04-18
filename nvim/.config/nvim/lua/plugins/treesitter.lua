@@ -1,7 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  event = { "BufReadPost", "BufNewFile" },
   build = ":TSUpdate",
-  config = function () 
+  config = function()
     local configs = require("nvim-treesitter.configs")
 
     configs.setup({
@@ -9,7 +10,7 @@ return {
       sync_install = false,
       auto_install = true,
       highlight = { enable = true },
-      indent = { enable = true },  
+      indent = { enable = true },
     })
   end
 }
