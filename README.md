@@ -21,5 +21,5 @@ Welcome to my dotfiles repository! This repository contains all the config files
 ## Dependencies
 
 ```sh
-    yay -S stow dunst picom lxsession i3 neovim tmux fish ghostty-git fzf zoxide ripgrep fd rofi eza bat sesh-bin github-cli
+    yay -S stow dunst lxsession neovim tmux fish fzf zoxide ripgrep fd rofi eza bat sesh-bin
 ```
