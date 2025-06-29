@@ -174,7 +174,7 @@ bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ t
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 # Special key to take a screenshot with grim
-bindsym $mod+p exec grim
+bindsym $mod+p exec grim -g "$(slurp)" - | swappy -f -
 
 # Status Bar:
 bar {
