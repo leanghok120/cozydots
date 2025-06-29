@@ -1,8 +1,0 @@
-font-family = "Ac437 IBM BIOS"
-font-size = 18
-theme = ayu
-cursor-style = block
-shell-integration-features = no-cursor
-window-decoration = none
-window-padding-x = 10
-window-padding-y = 10

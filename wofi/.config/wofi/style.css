@@ -1,0 +1,67 @@
+* {
+  font-family: CaskaydiaMono Nerd Font;
+  background: transparent;
+  color: #cdd6f4;
+}
+
+#window {
+  color: #89b4fa;
+  border-color: #89b4fa;
+  border-style: solid;
+  border-width: 1px;
+
+  background-image: linear-gradient(to bottom, #181825 100%);
+  border-radius: 14px;
+}
+#scroll {
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #89b4fa;
+}
+#inner-box {
+  padding-top: 12px;
+}
+#entry {
+  border-style: none;
+  border-color: #89b4fa;
+  color: #89b4fa;
+  padding: 6px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  margin-right: 12;
+
+  border-radius: 12px;
+}
+
+#entry:selected {
+  background: #313244;
+  font-weight: bold;
+  outline: none;
+}
+
+#input {
+  background-color: #181825;
+  color: #cdd6f4;
+  border-color: #89b4fa;
+
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+
+  font-style: normal;
+
+  border-radius: 8;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  padding: 12px;
+  margin: 8px;
+}
+#input:focus {
+  font-style: italic;
+}
+
+#img {
+  padding: 4px;
+  margin-right: 6px;
+}
