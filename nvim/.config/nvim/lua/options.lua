@@ -1,40 +1,49 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
+vim.g.have_nerd_font = true
 
-vim.opt.showmode = false
+vim.o.number = true
+vim.o.relativenumber = true
 
-vim.schedule(function()
-  vim.opt.clipboard = 'unnamedplus'
-end)
+vim.o.mouse = 'a'
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
-vim.opt.wrap = false
+vim.o.showmode = false
 
-vim.opt.smartindent = true
+vim.schedule(function()
+  vim.o.clipboard = 'unnamedplus'
+end)
 
-vim.opt.undofile = true
+vim.o.breakindent = true
 
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+vim.o.undofile = true
 
-vim.opt.signcolumn = 'yes'
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
-vim.opt.updatetime = 250
+vim.o.signcolumn = 'yes'
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+vim.o.updatetime = 250
 
-vim.opt.splitright = true
-vim.opt.splitbelow = true
+vim.o.timeoutlen = 300
 
-vim.opt.inccommand = 'split'
+vim.o.splitright = true
+vim.o.splitbelow = true
 
-vim.opt.cursorline = true
+vim.o.inccommand = 'split'
 
-vim.opt.scrolloff = 10
+vim.o.cursorline = true
 
-vim.opt.confirm = true
+vim.o.scrolloff = 10
+
+vim.o.confirm = true
+
+vim.api.nvim_create_autocmd('TextYankPost', {
+  desc = 'Highlight when yanking (copying) text',
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  callback = function()
+    vim.hl.on_yank()
+  end,
+})

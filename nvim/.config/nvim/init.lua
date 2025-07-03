@@ -1,3 +1,3 @@
-require("remap")
+require("keymaps")
 require("options")
-require("lazy-bootstrap")
+require("config.lazy")
