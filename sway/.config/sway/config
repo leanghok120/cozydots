@@ -14,6 +14,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id sh -c ' eval $(gnome-keyring-daemon --login) eval $(gnome-keyring-daemon --start --components=secrets,ssh) export SSH_AUTH_SOCK'
 exec Telegram
 exec zen-browser
+exec waypaper --restore
 
 ### Gaps and Borders
 gaps inner 10
@@ -32,7 +33,6 @@ client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
 
 ### Output configuration
-output * bg "/home/leanghok/Pictures/walls/sky-flying-thing.jpeg" fill
 output * resolution 1920x1080 position 1920,0
 
 ### Input configuration
