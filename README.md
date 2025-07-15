@@ -1,25 +1,27 @@
 # Dotfiles for my machine
 
-Welcome to my dotfiles repository! This repository contains all the config files I use everyday on my machine for studying and programming.
-
-## Table of Contents
-
-1. [Setup](#Setup)
-2. [Dependencies](#Dependencies)
+my dots
 
 ## Setup
 
-- i3wm
-- Neovim
-- Tmux
-- Fish
-- Ghostty
-- Rofi
-- Dunst
-- Picom
+- sway
+- neovim
+- tmux
+- fish
+- kitty
+- wofi
 
 ## Dependencies
 
 ```sh
-    yay -S stow dunst lxsession neovim tmux fish fzf zoxide ripgrep fd rofi eza bat sesh-bin
+    yay -S stow swaync lxsession neovim tmux fish fzf zoxide ripgrep fd wofi eza bat sesh-bin sway waybar
+```
+
+## Installation
+
+1. clone the repo
+
+2. run:
+```
+stow kitty neovim tmux sway waybar wofi fish
 ```
