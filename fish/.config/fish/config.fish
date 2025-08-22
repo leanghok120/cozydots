@@ -8,6 +8,7 @@ export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 export PATH="$HOME/.local/scripts:$PATH"
 export EDITOR='nvim'
 export MANPAGER="nvim +Man!"
+export BROWSER="zen-browser"
 
 # pnpm
 set -gx PNPM_HOME "/home/leanghok/.local/share/pnpm"
