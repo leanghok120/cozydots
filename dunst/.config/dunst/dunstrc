@@ -9,7 +9,7 @@
     # The maximum height of a single notification, excluding the frame.
     # height = 300
     # Position the notification in the top right corner
-    origin = bottom-right
+    origin = top-right
     # Offset from the origin
     offset = 48x48
     # Scale factor. It is auto-detected if value is 0.
@@ -163,8 +163,8 @@
     frame_color = "#ffffff"
 
 [urgency_normal]
-    background = "#080808"
-    foreground = "#f0f0f0"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
     frame_color = "#ffffff"
 
 [urgency_critical]
