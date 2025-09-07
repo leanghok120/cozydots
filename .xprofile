@@ -1,0 +1,6 @@
+nitrogen --restore
+# actualbar &
+dunst &
+xset r rate 200
+zen-browser &
+Telegram &
