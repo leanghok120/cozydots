@@ -4,17 +4,17 @@ my dots
 
 ## Setup
 
-- sway
+- dwm
+- st
+- dmenu
 - neovim
-- tmux
 - fish
-- kitty
-- wofi
+- dunst
 
 ## Dependencies
 
 ```sh
-    yay -S stow swaync lxsession neovim tmux fish fzf zoxide ripgrep fd wofi eza bat sesh-bin sway waybar
+    yay -S stow dunst lxsession neovim fish fzf zoxide ripgrep fd dmenu eza bat sesh-bin
 ```
 
 ## Installation
@@ -23,5 +23,7 @@ my dots
 
 2. run:
 ```
-stow kitty neovim tmux sway waybar wofi fish
+stow .
 ```
+
+3. install dwm and st
