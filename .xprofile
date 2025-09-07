@@ -1,5 +1,5 @@
 nitrogen --restore
-# actualbar &
+bar &
 dunst &
 xset r rate 200
 zen-browser &
