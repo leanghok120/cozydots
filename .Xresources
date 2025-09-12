@@ -2,8 +2,6 @@
 *foreground: #cdd6f4
 *cursorColor: #f5e0dc
 
-st.borderpx: 20
-
 ! black
 *color0: #45475a
 *color8: #585b70
@@ -35,6 +33,9 @@ st.borderpx: 20
 ! white
 *color7: #bac2de
 *color15: #a6adc8
+
+! program styles
+st.borderpx: 20
 
 dwm.normbordercolor: #45475a
 dwm.normbgcolor: #1e1e2e
