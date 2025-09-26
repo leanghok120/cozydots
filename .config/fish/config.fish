@@ -8,7 +8,7 @@ export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 export PATH="$HOME/.local/scripts:$PATH"
 export EDITOR='nvim'
 export MANPAGER="nvim +Man!"
-export BROWSER="zen-browser"
+export BROWSER="helium"
 
 # pnpm
 set -gx PNPM_HOME "/home/leanghok/.local/share/pnpm"
@@ -23,3 +23,5 @@ zoxide init fish --cmd cd | source
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+cat ~/todo.md
