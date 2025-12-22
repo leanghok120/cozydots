@@ -1,7 +1,4 @@
-#!/bin/sh
-
-[ -f /etc/xprofile ] && . /etc/xprofile
-[ -f ~/.xprofile ] && . ~/.xprofile
-
-xrdb merge .Xresources
-exec dwm
+xrdb load $HOME/.Xresources
+xset r rate 200
+nitrogen --restore
+exec wm

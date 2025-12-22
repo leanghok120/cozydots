@@ -1,45 +1,28 @@
-*background: #1e1e2e
-*foreground: #cdd6f4
+*background: #000000
+*foreground: #ebdbb2
 *cursorColor: #f5e0dc
 
-! black
-*color0: #45475a
-*color8: #585b70
-
-! red
-*color1: #f38ba8
-*color9: #f38ba8
-
-! green
-*color2: #a6e3a1
-*color10: #a6e3a1
-
-! yellow
-*color3: #f9e2af
-*color11: #f9e2af
-
-! blue
-*color4: #89b4fa
-*color12: #89b4fa
-
-! magenta
-*color5: #f5c2e7
-*color13: #f5c2e7
-
-! cyan
-*color6: #94e2d5
-*color14: #94e2d5
-
-! white
-*color7: #bac2de
-*color15: #a6adc8
-
-! program styles
-st.borderpx: 20
-
-dwm.normbordercolor: #45475a
-dwm.normbgcolor: #1e1e2e
-dwm.normfgcolor: #cdd6f4
-dwm.selbordercolor: #89b4fa
-dwm.selbgcolor: #89b4fa
-dwm.selfgcolor:  #000000
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2

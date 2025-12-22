@@ -1,6 +1,0 @@
-nitrogen --restore
-bar &
-dunst &
-xset r rate 200
-helium &
-Telegram &

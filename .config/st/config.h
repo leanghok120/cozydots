@@ -103,7 +103,7 @@ float alpha_def;
 static const char *colorname[] = {
 // Nord Color Scheme
 	/* 8 normal colors */
-	"#3b4252", /* black   */
+	"#ffffff", /* black   */
 	"#bf616a", /* red     */
 	"#a3be8c", /* green   */
 	"#ebcb8b", /* yellow  */
@@ -204,7 +204,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_J,           zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
-	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
+	{ ControlMask,               XK_v,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
