@@ -42,7 +42,5 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_find_no_dups
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/home/leanghok/Downloads/odin:$PATH"
-export PATH="~/Downloads/odin:$PATH"
+export PATH="/home/leanghok/.local/bin:$PATH"
