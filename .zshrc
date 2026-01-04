@@ -30,6 +30,7 @@ alias gp="git push"
 bindkey -e
 bindkey "^p" history-search-backward
 bindkey "^n" history-search-forward
+bindkey -s "^s" "tmux-sessionizer\n"
 
 # history
 HISTSIZE=5000
