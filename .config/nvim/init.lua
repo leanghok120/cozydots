@@ -112,4 +112,12 @@ require("lazy").setup({
 			vim.lsp.enable({"gopls", "html", "cssls", "lua_ls", "clangd"})
 		end
 	},
+	{
+		'm4xshen/autoclose.nvim',
+		lazy = true,
+		event = "InsertEnter",
+		config = function()
+			require("autoclose").setup()
+		end
+	},
 })
