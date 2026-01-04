@@ -1,23 +1,16 @@
-# Dotfiles for my machine
+# dotfiles
 
-my dots
+## dependencies
 
-## Setup
-
-- dwm
+- i3
 - st
-- dmenu
+- cmenu (my own dmenu alternative)
 - neovim
-- fish
+- tmux
+- zsh
 - dunst
 
-## Dependencies
-
-```sh
-    yay -S stow dunst lxsession neovim fish fzf zoxide ripgrep fd dmenu eza bat sesh-bin
-```
-
-## Installation
+## installation
 
 1. clone the repo
 
@@ -25,5 +18,3 @@ my dots
 ```
 stow .
 ```
-
-3. install dwm and st
