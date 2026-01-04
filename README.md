@@ -1,5 +1,7 @@
 # dotfiles
 
+![screenshot](./screenshot.png)
+
 ## dependencies
 
 - i3
